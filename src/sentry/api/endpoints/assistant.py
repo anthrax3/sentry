@@ -1,6 +1,9 @@
 from __future__ import absolute_import
 
+from copy import deepcopy
+
 from django.db import IntegrityError, transaction
+from django.http import HttpResponse
 from django.utils import timezone
 from rest_framework import serializers
 from rest_framework.permissions import IsAuthenticated
@@ -27,23 +30,20 @@ class AssistantSerializer(serializers.Serializer):
     useful = serializers.BooleanField()
 
 
-def get_guides(user):
-    seen_ids = set(AssistantActivity.objects.filter(
-        user=user,
-    ).values_list('guide_id', flat=True))
-    result = {}
-    for k, v in GUIDES.items():
-        v['seen'] = k in seen_ids
-        result[k] = v
-    return result
-
-
 class AssistantEndpoint(Endpoint):
     permission_classes = (IsAuthenticated, )
 
     def get(self, request):
         """Return all the guides the user has not viewed or dismissed."""
-        return Response(get_guides(request.user))
+        guides = deepcopy(GUIDES)
+        seen_ids = set(AssistantActivity.objects.filter(
+            user=request.user,
+        ).values_list('guide_id', flat=True))
+        result = {}
+        for k, v in guides.items():
+            v['seen'] = k in seen_ids
+            result[k] = v
+        return Response(result)
 
     def put(self, request):
         """Mark a guide as viewed or dismissed.
@@ -80,4 +80,4 @@ class AssistantEndpoint(Endpoint):
         except IntegrityError:
             pass
 
-        return Response(get_guides(request.user), status=201)
+        return HttpResponse(status=201)
