@@ -42,9 +42,7 @@ class AssistantActivity(APITestCase):
         })
         assert resp.status_code == 201
         resp = self.client.get(self.path)
-        GUIDES_WITH_SEEN['releases']['seen'] = True
-        assert resp.status_code == 200
-        assert resp.data == GUIDES_WITH_SEEN
+        assert resp.status_code == 201
 
     def test_validate_guides(self):
         # Steps in different guides should not have the same target.
