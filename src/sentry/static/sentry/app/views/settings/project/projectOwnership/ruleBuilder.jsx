@@ -15,6 +15,8 @@ import DropdownButton from '../../../../components/dropdownButton';
 import ActorAvatar from '../../../../components/actorAvatar';
 import SentryTypes from '../../../../proptypes';
 import {buildUserId, buildTeamId, actorEquality} from '../../../../utils';
+import {userDisplayName} from '../../../../utils/formatters';
+
 import {addErrorMessage} from '../../../../actionCreators/indicator';
 
 import {t} from '../../../../locale';
@@ -41,8 +43,8 @@ class RuleBuilder extends React.Component {
   mentionableUsers() {
     return memberListStore.getAll().map(member => ({
       value: buildUserId(member.id),
-      label: member.email,
-      searchKey: `${member.email}  ${name}`,
+      label: userDisplayName(member),
+      searchKey: `${member.email}  ${member.name}`,
       actor: {
         type: 'user',
         id: member.id,

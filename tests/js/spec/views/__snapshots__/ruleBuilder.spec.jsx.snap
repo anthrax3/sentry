@@ -25,7 +25,7 @@ exports[`RuleBuilder render() renders 1`] = `
 >
   <BuilderBar>
     <div
-      className="css-1rsoebt-BuilderBar css-wiuq245"
+      className="css-1rsoebt-BuilderBar css-fgajj25"
     >
       <BuilderSelect
         onChange={[Function]}
@@ -33,7 +33,7 @@ exports[`RuleBuilder render() renders 1`] = `
         value="path"
       >
         <SelectInput
-          className="css-1eslqkc-BuilderSelect css-wiuq246"
+          className="css-1eslqkc-BuilderSelect css-fgajj26"
           disabled={false}
           multiple={false}
           onChange={[Function]}
@@ -43,7 +43,7 @@ exports[`RuleBuilder render() renders 1`] = `
           value="path"
         >
           <select
-            className="css-1eslqkc-BuilderSelect css-wiuq246"
+            className="css-1eslqkc-BuilderSelect css-fgajj26"
             disabled={false}
             multiple={false}
             onChange={[Function]}
@@ -71,7 +71,7 @@ exports[`RuleBuilder render() renders 1`] = `
         value=""
       >
         <input
-          className="css-1t4syiu-Input-BuilderInput css-wiuq247"
+          className="css-1t4syiu-Input-BuilderInput css-fgajj27"
           onChange={[Function]}
           placeholder="src/example/*"
           value=""
@@ -81,17 +81,17 @@ exports[`RuleBuilder render() renders 1`] = `
         src="icon-chevron-right"
       >
         <InlineSvg
-          className="css-a4tn6s-Divider css-wiuq248"
+          className="css-a4tn6s-Divider css-fgajj28"
           src="icon-chevron-right"
         >
           <StyledSvg
-            className="css-a4tn6s-Divider css-wiuq248"
+            className="css-a4tn6s-Divider css-fgajj28"
             height="1em"
             viewBox={Object {}}
             width="1em"
           >
             <svg
-              className="css-wiuq248 css-5e2rei-StyledSvg css-adkcw30"
+              className="css-fgajj28 css-5e2rei-StyledSvg css-adkcw30"
               height="1em"
               viewBox={Object {}}
               width="1em"
@@ -134,8 +134,8 @@ exports[`RuleBuilder render() renders 1`] = `
                           "name": "Jane Doe",
                           "type": "user",
                         },
-                        "label": "janedoe@example.com",
-                        "searchKey": "janedoe@example.com  nodejs",
+                        "label": "Jane Doe (janedoe@example.com)",
+                        "searchKey": "janedoe@example.com  Jane Doe",
                         "value": "user:1",
                       },
                       Object {
@@ -144,8 +144,8 @@ exports[`RuleBuilder render() renders 1`] = `
                           "name": "John Smith",
                           "type": "user",
                         },
-                        "label": "johnsmith@example.com",
-                        "searchKey": "johnsmith@example.com  nodejs",
+                        "label": "John Smith (johnsmith@example.com)",
+                        "searchKey": "johnsmith@example.com  John Smith",
                         "value": "user:2",
                       },
                     ],
@@ -174,8 +174,8 @@ exports[`RuleBuilder render() renders 1`] = `
                             "name": "Jane Doe",
                             "type": "user",
                           },
-                          "label": "janedoe@example.com",
-                          "searchKey": "janedoe@example.com  nodejs",
+                          "label": "Jane Doe (janedoe@example.com)",
+                          "searchKey": "janedoe@example.com  Jane Doe",
                           "value": "user:1",
                         },
                         Object {
@@ -184,8 +184,8 @@ exports[`RuleBuilder render() renders 1`] = `
                             "name": "John Smith",
                             "type": "user",
                           },
-                          "label": "johnsmith@example.com",
-                          "searchKey": "johnsmith@example.com  nodejs",
+                          "label": "John Smith (johnsmith@example.com)",
+                          "searchKey": "johnsmith@example.com  John Smith",
                           "value": "user:2",
                         },
                       ],
@@ -223,27 +223,27 @@ exports[`RuleBuilder render() renders 1`] = `
                               size="zero"
                             >
                               <DropdownButton
-                                className="css-agp1qb-BuilderDropdownButton css-wiuq2410"
+                                className="css-agp1qb-BuilderDropdownButton css-fgajj210"
                                 isOpen={false}
                                 size="zero"
                               >
                                 <StyledButton
-                                  className="css-agp1qb-BuilderDropdownButton css-wiuq2410"
+                                  className="css-agp1qb-BuilderDropdownButton css-fgajj210"
                                   isOpen={false}
                                   size="zero"
                                 >
                                   <Component
-                                    className="css-wiuq2410 css-vx22y2-StyledButton css-1pig06q1"
+                                    className="css-fgajj210 css-vx22y2-StyledButton css-1pig06q1"
                                     isOpen={false}
                                     size="zero"
                                   >
                                     <Button
-                                      className="css-wiuq2410 css-vx22y2-StyledButton css-1pig06q1"
+                                      className="css-fgajj210 css-vx22y2-StyledButton css-1pig06q1"
                                       disabled={false}
                                       size="zero"
                                     >
                                       <button
-                                        className="css-wiuq2410 css-vx22y2-StyledButton css-1pig06q1 button button-default button-zero"
+                                        className="css-fgajj210 css-vx22y2-StyledButton css-1pig06q1 button button-default button-zero"
                                         disabled={false}
                                         onClick={[Function]}
                                         role="button"
@@ -262,7 +262,7 @@ exports[`RuleBuilder render() renders 1`] = `
                                             >
                                               <Owners>
                                                 <div
-                                                  className="css-1t34ifm-Owners css-wiuq249"
+                                                  className="css-1t34ifm-Owners css-fgajj29"
                                                 />
                                               </Owners>
                                               <div>
@@ -324,7 +324,7 @@ exports[`RuleBuilder render() renders 1`] = `
         size="zero"
       >
         <Button
-          className="css-3daogo-RuleAddButton css-wiuq2411"
+          className="css-3daogo-RuleAddButton css-fgajj211"
           disabled={false}
           icon="icon-circle-add"
           onClick={[Function]}
@@ -332,7 +332,7 @@ exports[`RuleBuilder render() renders 1`] = `
           size="zero"
         >
           <button
-            className="css-3daogo-RuleAddButton css-wiuq2411 button button-primary button-zero"
+            className="css-3daogo-RuleAddButton css-fgajj211 button button-primary button-zero"
             disabled={false}
             onClick={[Function]}
             role="button"
@@ -433,31 +433,31 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
 >
   <Candidates>
     <div
-      className="css-1fyz2uk-Candidates css-wiuq240"
+      className="css-1fyz2uk-Candidates css-fgajj20"
     >
       <RuleCandidate
         key="a/bar"
         onClick={[Function]}
       >
         <div
-          className="css-4hexhh-RuleCandidate css-wiuq243"
+          className="css-4hexhh-RuleCandidate css-fgajj23"
           onClick={[Function]}
         >
           <AddIcon
             src="icon-circle-add"
           >
             <InlineSvg
-              className="css-1ivdji5-AddIcon css-wiuq244"
+              className="css-1ivdji5-AddIcon css-fgajj24"
               src="icon-circle-add"
             >
               <StyledSvg
-                className="css-1ivdji5-AddIcon css-wiuq244"
+                className="css-1ivdji5-AddIcon css-fgajj24"
                 height="1em"
                 viewBox={Object {}}
                 width="1em"
               >
                 <svg
-                  className="css-wiuq244 css-eomeeu-StyledSvg css-adkcw30"
+                  className="css-fgajj24 css-eomeeu-StyledSvg css-adkcw30"
                   height="1em"
                   viewBox={Object {}}
                   width="1em"
@@ -472,14 +472,14 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
           </AddIcon>
           <StyledTextOverflow>
             <div
-              className="css-q3yspe-TextOverflow-StyledTextOverflow css-wiuq242"
+              className="css-q3yspe-TextOverflow-StyledTextOverflow css-fgajj22"
             >
               a/bar
             </div>
           </StyledTextOverflow>
           <TypeHint>
             <div
-              className="css-6d8mj3-TypeHint css-wiuq241"
+              className="css-6d8mj3-TypeHint css-fgajj21"
             >
               [PATH]
             </div>
@@ -491,24 +491,24 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
         onClick={[Function]}
       >
         <div
-          className="css-4hexhh-RuleCandidate css-wiuq243"
+          className="css-4hexhh-RuleCandidate css-fgajj23"
           onClick={[Function]}
         >
           <AddIcon
             src="icon-circle-add"
           >
             <InlineSvg
-              className="css-1ivdji5-AddIcon css-wiuq244"
+              className="css-1ivdji5-AddIcon css-fgajj24"
               src="icon-circle-add"
             >
               <StyledSvg
-                className="css-1ivdji5-AddIcon css-wiuq244"
+                className="css-1ivdji5-AddIcon css-fgajj24"
                 height="1em"
                 viewBox={Object {}}
                 width="1em"
               >
                 <svg
-                  className="css-wiuq244 css-eomeeu-StyledSvg css-adkcw30"
+                  className="css-fgajj24 css-eomeeu-StyledSvg css-adkcw30"
                   height="1em"
                   viewBox={Object {}}
                   width="1em"
@@ -523,14 +523,14 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
           </AddIcon>
           <StyledTextOverflow>
             <div
-              className="css-q3yspe-TextOverflow-StyledTextOverflow css-wiuq242"
+              className="css-q3yspe-TextOverflow-StyledTextOverflow css-fgajj22"
             >
               a/foo
             </div>
           </StyledTextOverflow>
           <TypeHint>
             <div
-              className="css-6d8mj3-TypeHint css-wiuq241"
+              className="css-6d8mj3-TypeHint css-fgajj21"
             >
               [PATH]
             </div>
@@ -542,24 +542,24 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
         onClick={[Function]}
       >
         <div
-          className="css-4hexhh-RuleCandidate css-wiuq243"
+          className="css-4hexhh-RuleCandidate css-fgajj23"
           onClick={[Function]}
         >
           <AddIcon
             src="icon-circle-add"
           >
             <InlineSvg
-              className="css-1ivdji5-AddIcon css-wiuq244"
+              className="css-1ivdji5-AddIcon css-fgajj24"
               src="icon-circle-add"
             >
               <StyledSvg
-                className="css-1ivdji5-AddIcon css-wiuq244"
+                className="css-1ivdji5-AddIcon css-fgajj24"
                 height="1em"
                 viewBox={Object {}}
                 width="1em"
               >
                 <svg
-                  className="css-wiuq244 css-eomeeu-StyledSvg css-adkcw30"
+                  className="css-fgajj24 css-eomeeu-StyledSvg css-adkcw30"
                   height="1em"
                   viewBox={Object {}}
                   width="1em"
@@ -574,14 +574,14 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
           </AddIcon>
           <StyledTextOverflow>
             <div
-              className="css-q3yspe-TextOverflow-StyledTextOverflow css-wiuq242"
+              className="css-q3yspe-TextOverflow-StyledTextOverflow css-fgajj22"
             >
               example.com/a
             </div>
           </StyledTextOverflow>
           <TypeHint>
             <div
-              className="css-6d8mj3-TypeHint css-wiuq241"
+              className="css-6d8mj3-TypeHint css-fgajj21"
             >
               [URL]
             </div>
@@ -593,24 +593,24 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
         onClick={[Function]}
       >
         <div
-          className="css-4hexhh-RuleCandidate css-wiuq243"
+          className="css-4hexhh-RuleCandidate css-fgajj23"
           onClick={[Function]}
         >
           <AddIcon
             src="icon-circle-add"
           >
             <InlineSvg
-              className="css-1ivdji5-AddIcon css-wiuq244"
+              className="css-1ivdji5-AddIcon css-fgajj24"
               src="icon-circle-add"
             >
               <StyledSvg
-                className="css-1ivdji5-AddIcon css-wiuq244"
+                className="css-1ivdji5-AddIcon css-fgajj24"
                 height="1em"
                 viewBox={Object {}}
                 width="1em"
               >
                 <svg
-                  className="css-wiuq244 css-eomeeu-StyledSvg css-adkcw30"
+                  className="css-fgajj24 css-eomeeu-StyledSvg css-adkcw30"
                   height="1em"
                   viewBox={Object {}}
                   width="1em"
@@ -625,14 +625,14 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
           </AddIcon>
           <StyledTextOverflow>
             <div
-              className="css-q3yspe-TextOverflow-StyledTextOverflow css-wiuq242"
+              className="css-q3yspe-TextOverflow-StyledTextOverflow css-fgajj22"
             >
               example.com/a/foo
             </div>
           </StyledTextOverflow>
           <TypeHint>
             <div
-              className="css-6d8mj3-TypeHint css-wiuq241"
+              className="css-6d8mj3-TypeHint css-fgajj21"
             >
               [URL]
             </div>
@@ -643,7 +643,7 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
   </Candidates>
   <BuilderBar>
     <div
-      className="css-1rsoebt-BuilderBar css-wiuq245"
+      className="css-1rsoebt-BuilderBar css-fgajj25"
     >
       <BuilderSelect
         onChange={[Function]}
@@ -651,7 +651,7 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
         value="path"
       >
         <SelectInput
-          className="css-1eslqkc-BuilderSelect css-wiuq246"
+          className="css-1eslqkc-BuilderSelect css-fgajj26"
           disabled={false}
           multiple={false}
           onChange={[Function]}
@@ -661,7 +661,7 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
           value="path"
         >
           <select
-            className="css-1eslqkc-BuilderSelect css-wiuq246"
+            className="css-1eslqkc-BuilderSelect css-fgajj26"
             disabled={false}
             multiple={false}
             onChange={[Function]}
@@ -689,7 +689,7 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
         value="a/bar"
       >
         <input
-          className="css-1t4syiu-Input-BuilderInput css-wiuq247"
+          className="css-1t4syiu-Input-BuilderInput css-fgajj27"
           onChange={[Function]}
           placeholder="src/example/*"
           value="a/bar"
@@ -699,17 +699,17 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
         src="icon-chevron-right"
       >
         <InlineSvg
-          className="css-a4tn6s-Divider css-wiuq248"
+          className="css-a4tn6s-Divider css-fgajj28"
           src="icon-chevron-right"
         >
           <StyledSvg
-            className="css-a4tn6s-Divider css-wiuq248"
+            className="css-a4tn6s-Divider css-fgajj28"
             height="1em"
             viewBox={Object {}}
             width="1em"
           >
             <svg
-              className="css-wiuq248 css-5e2rei-StyledSvg css-adkcw30"
+              className="css-fgajj28 css-5e2rei-StyledSvg css-adkcw30"
               height="1em"
               viewBox={Object {}}
               width="1em"
@@ -752,8 +752,8 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
                           "name": "Jane Doe",
                           "type": "user",
                         },
-                        "label": "janedoe@example.com",
-                        "searchKey": "janedoe@example.com  nodejs",
+                        "label": "Jane Doe (janedoe@example.com)",
+                        "searchKey": "janedoe@example.com  Jane Doe",
                         "value": "user:1",
                       },
                       Object {
@@ -762,8 +762,8 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
                           "name": "John Smith",
                           "type": "user",
                         },
-                        "label": "johnsmith@example.com",
-                        "searchKey": "johnsmith@example.com  nodejs",
+                        "label": "John Smith (johnsmith@example.com)",
+                        "searchKey": "johnsmith@example.com  John Smith",
                         "value": "user:2",
                       },
                     ],
@@ -792,8 +792,8 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
                             "name": "Jane Doe",
                             "type": "user",
                           },
-                          "label": "janedoe@example.com",
-                          "searchKey": "janedoe@example.com  nodejs",
+                          "label": "Jane Doe (janedoe@example.com)",
+                          "searchKey": "janedoe@example.com  Jane Doe",
                           "value": "user:1",
                         },
                         Object {
@@ -802,8 +802,8 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
                             "name": "John Smith",
                             "type": "user",
                           },
-                          "label": "johnsmith@example.com",
-                          "searchKey": "johnsmith@example.com  nodejs",
+                          "label": "John Smith (johnsmith@example.com)",
+                          "searchKey": "johnsmith@example.com  John Smith",
                           "value": "user:2",
                         },
                       ],
@@ -841,27 +841,27 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
                               size="zero"
                             >
                               <DropdownButton
-                                className="css-agp1qb-BuilderDropdownButton css-wiuq2410"
+                                className="css-agp1qb-BuilderDropdownButton css-fgajj210"
                                 isOpen={false}
                                 size="zero"
                               >
                                 <StyledButton
-                                  className="css-agp1qb-BuilderDropdownButton css-wiuq2410"
+                                  className="css-agp1qb-BuilderDropdownButton css-fgajj210"
                                   isOpen={false}
                                   size="zero"
                                 >
                                   <Component
-                                    className="css-wiuq2410 css-vx22y2-StyledButton css-1pig06q1"
+                                    className="css-fgajj210 css-vx22y2-StyledButton css-1pig06q1"
                                     isOpen={false}
                                     size="zero"
                                   >
                                     <Button
-                                      className="css-wiuq2410 css-vx22y2-StyledButton css-1pig06q1"
+                                      className="css-fgajj210 css-vx22y2-StyledButton css-1pig06q1"
                                       disabled={false}
                                       size="zero"
                                     >
                                       <button
-                                        className="css-wiuq2410 css-vx22y2-StyledButton css-1pig06q1 button button-default button-zero"
+                                        className="css-fgajj210 css-vx22y2-StyledButton css-1pig06q1 button button-default button-zero"
                                         disabled={false}
                                         onClick={[Function]}
                                         role="button"
@@ -880,7 +880,7 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
                                             >
                                               <Owners>
                                                 <div
-                                                  className="css-1t34ifm-Owners css-wiuq249"
+                                                  className="css-1t34ifm-Owners css-fgajj29"
                                                 >
                                                   <span
                                                     key="user-1"
@@ -1010,7 +1010,7 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
         size="zero"
       >
         <Button
-          className="css-3daogo-RuleAddButton css-wiuq2411"
+          className="css-3daogo-RuleAddButton css-fgajj211"
           disabled={false}
           icon="icon-circle-add"
           onClick={[Function]}
@@ -1018,7 +1018,7 @@ exports[`RuleBuilder renders with suggestions renders 1`] = `
           size="zero"
         >
           <button
-            className="css-3daogo-RuleAddButton css-wiuq2411 button button-primary button-zero"
+            className="css-3daogo-RuleAddButton css-fgajj211 button button-primary button-zero"
             disabled={false}
             onClick={[Function]}
             role="button"
