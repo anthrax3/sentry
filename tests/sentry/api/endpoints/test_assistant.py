@@ -27,13 +27,13 @@ class AssistantActivity(APITestCase):
         assert resp.status_code == 400
 
     def test_activity(self):
-        GUIDES_WITH_SEEN = GUIDES.copy()
-        for g in GUIDES_WITH_SEEN:
-            GUIDES_WITH_SEEN[g]['seen'] = False
+        guides_with_seen = GUIDES.copy()
+        for g in guides_with_seen:
+            guides_with_seen[g]['seen'] = False
 
         resp = self.client.get(self.path)
         assert resp.status_code == 200
-        assert resp.data == GUIDES_WITH_SEEN
+        assert resp.data == guides_with_seen
 
         # Dismiss the guide and make sure it is not returned again.
         resp = self.client.put(self.path, {
