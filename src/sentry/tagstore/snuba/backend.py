@@ -23,6 +23,10 @@ from sentry.tagstore.exceptions import (
     TagValueNotFound,
 )
 from sentry.utils import snuba
+from sentry.models import GroupHash
+from sentry.tagstore import TagKeyStatus
+from sentry.tagstore.base import TagStorage
+
 
 SEEN_COLUMN = 'timestamp'
 
@@ -388,30 +392,46 @@ class SnubaTagStorage(TagStorage):
         result = snuba.query(start, end, ['issue'], None, filters, aggregations)
         return defaultdict(int, result.items())
 
-    # Search
-    def get_group_ids_for_search_filter(self, project_id, environment_id, tags):
-        from sentry.search.base import ANY, EMPTY
-        start, end = self.get_time_range()
-        # Any EMPTY value means there can be no results for this query so
-        # return an empty list immediately.
-        if any(val == EMPTY for _, val in six.iteritems(tags)):
-            return []
+    def get_group_ids_for_search_filter(
+            self, project_id, environment_id, tags, start, end, candidates=None, limit=1000):
+
+        from sentry.search.base import ANY
 
         filters = {
-            'environment': [environment_id],
             'project_id': [project_id],
         }
+
+        if environment_id is not None:
+            filters['environment'] = [environment_id]
+
+        # only passed in when using the DjangoSearchBackend
+        if candidates:
+            hashes = list(GroupHash.objects.filter(
+                group_id__in=candidates
+            ).values_list(
+                'hash', flat=True
+            ).distinct())
+
+            if not hashes:
+                return []
+
+            filters['primary_hash'] = hashes
 
         conditions = []
         for tag, val in six.iteritems(tags):
             col = 'tags[{}]'.format(tag)
             if val == ANY:
-                conditions.append((col, 'IS NOT NULL', None))
+                conditions.append((col, '!=', ''))
             else:
                 conditions.append((col, '=', val))
 
-        issues = snuba.query(start, end, ['issue'], conditions, filters)
-        return issues.keys()
+        hashes = snuba.query(start, end, ['primary_hash'], conditions, filters)
+
+        group_ids = GroupHash.objects.filter(
+            project_id=project_id, hash__in=hashes.keys()
+        ).values_list('group_id', flat=True).distinct()
+
+        return group_ids
 
     # Everything from here down is basically no-ops
     def create_tag_key(self, project_id, environment_id, key, **kwargs):
