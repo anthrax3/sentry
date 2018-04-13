@@ -34,14 +34,14 @@ class AssistantEndpoint(Endpoint):
     permission_classes = (IsAuthenticated, )
 
     def get(self, request):
-        """Return all the guides the user has not viewed or dismissed."""
+        """Return all the guides with 'seen' attribute if user has seen them"""
         guides = deepcopy(GUIDES)
         seen_ids = set(AssistantActivity.objects.filter(
             user=request.user,
         ).values_list('guide_id', flat=True))
         result = {}
         for k, v in guides.items():
-            v['seen'] = k in seen_ids
+            v['seen'] = v[k]['id'] in seen_ids
             result[k] = v
         return Response(result)
 
